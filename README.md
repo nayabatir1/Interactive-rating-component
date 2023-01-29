@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/nayabatir1/Interactive-rating-component)
-- Live Site URL: [live site URL](https://nayabatir1.github.io/Interactive-rating-component/)
+- Live Site URL: [live site URL](https://interactive-rating-component-weld-alpha.vercel.app/)
 
 ## My process
 
