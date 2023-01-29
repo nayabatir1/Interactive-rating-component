@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?&family=Overpass&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--very-dark-blue);
+  font-size: 14px;
+  font-family: Overpass;
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  padding: 20px;
+  width: 80%;
+  height: max-content;
+  background-color: var(--dark-blue);
+  background: linear-gradient(
+    306deg,
+    rgba(37, 45, 55, 1) 57%,
+    rgba(52, 58, 68, 1) 100%
+  );
+
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.title-2 {
+  font-size: 1.8rem;
+}
+
+.description {
+  color: var(--medium-grey);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.icon {
+  padding: 10px;
+  background-color: rgb(38, 47, 56);
+  border-radius: 50%;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  aspect-ratio: 1/1;
+  height: 2.5rem;
+  background-color: var(--very-dark-blue);
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.rating:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--medium-grey);
+}
+
+.submit {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  background-color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  padding: 0.7rem;
+  border: none;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-title {
+  color: var(--orange);
+  padding: 15px;
+  background-color: #26343d;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 20rem;
+  }
+}
